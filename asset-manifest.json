@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/UpdateU/static/css/main.f4a08d9a.css",
+    "main.js": "/UpdateU/static/js/main.daca6585.js",
+    "static/js/453.08c78f33.chunk.js": "/UpdateU/static/js/453.08c78f33.chunk.js",
+    "index.html": "/UpdateU/index.html",
+    "main.f4a08d9a.css.map": "/UpdateU/static/css/main.f4a08d9a.css.map",
+    "main.daca6585.js.map": "/UpdateU/static/js/main.daca6585.js.map",
+    "453.08c78f33.chunk.js.map": "/UpdateU/static/js/453.08c78f33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a08d9a.css",
+    "static/js/main.daca6585.js"
+  ]
+}
