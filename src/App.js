@@ -6,10 +6,7 @@ function App() {
 
   let [articles,setArticles]=useState([])
   let [category,setCategory]=useState("india")
-
-
-  let [date,setDate]=useState("2024-6-28")
-  let [click,setClick]=useState("no")
+  let [date,setDate]=useState("2024-6-29")
 
   useEffect(()=>{
     fetch(`https://newsapi.org/v2/everything?q=${category}&from=${date}&language=en&apiKey=8cfdf03000394b06b5d0c6763600f60c`)
@@ -17,12 +14,11 @@ function App() {
     .then((news)=>{
       setArticles(news.articles);
       console.log(news.articles);
-      setClick("no")
     })
     .catch((err)=>{
       console.log(err)
     })
-  },[click])
+  },[date,category])
 
 
   return (
@@ -39,11 +35,7 @@ function App() {
         }}placeholder='search news'></input>
 
 
-
-
-
-
-        <input type="date" onChange={(event)=>{
+       <input type="date" onChange={(event)=>{
           if(event.target.value!==""){
             setDate(event.target.value)
           }
@@ -53,15 +45,6 @@ function App() {
         }}placeholder='YYYY-MM-DD'>
           
         </input> 
-
-        <button className="btn" onClick={()=>{
-           setClick("yes");
-        }}>Find</button>
-
-
-
-
-
 
       </header>
       <section className='news-articles'>
